@@ -7,38 +7,42 @@
 header{
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 18.5vh;
     padding: 0.1rem 0;
-    height: 20vh;
 }
 header .header-ul{
-    margin-left: 200px;
+    margin-left: 123px;
+    margin-top: 9px;
     display: flex;
     list-style: none;
-    width: 45%;
+    padding-top: 10px;
+    /* width: 65%; */
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+}
+.header-ul li{
+    margin-right: 35px;
 }
 .home-logo{
-    margin: 25px 100px;
+    margin: 27px 115px;
     width: 25%;
 }
 .home-logo a img{
-    width: 150px;
+    width: 120px;
 }
 .header-ul li a{
     color: #777;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .header-ul .log-in-btn
 {
     background-color: #0071bc;
-    padding: 10px;
+    padding: 7px 13px;
     color: #fff;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 3px;
 }
 .header-ul .log-in-btn:hover{
     color: #333;
@@ -49,64 +53,81 @@ header .header-ul{
 }
 /* Nav Bar Started From here */
 nav{
-    border-top: 0.5px solid lightgrey;
+    border-top: 0.5px solid rgb(243, 239, 239);
     display: flex;
     justify-content: center;
 }
 .navBar-items{
-    margin-top: 20px;
+    margin-top: 24px;
     width: 85%;
     background-color: #0071bc;
-    border-radius: 5px;
-    height: 8.5vh;
+    border-radius: 4px;
+    height: 7.3vh;
 }
 .navBar-items select{
-    width: 25%;
+    width: 24.5%;
     margin-left: 5px;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 4px;
+    color: #444;
+    padding: 7px 10px;
     appearance: none;
     outline: none;
 }
 .navBar-items input{
-    width: 29%;
     border: none;
     outline: none;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 7px 13px;
+    margin-top: 4.5px;
     border-radius: 5px;
 }
+.nav-input-what input{
+    width: 32.8%;
+}
+.navBar-items .where-input{
+    width: 24.5%;
+}
 .navBar-items button{
-    width: 15%;
+    width: 16%;
     background-color:#0071bc;
     border: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 700;
 }
+/* Page name div started */
 .page-name ul{
     display: flex;
     height: 10vh;
-    background-color: #e7f1f5;
+    background-color: aliceblue;
     width: 85.2%;
     border-radius: 5px;
-    margin: 10px 0 20px 100px;
+    padding: 0;
     align-items: center;
+    margin: 7px 0 32px 101px;
     list-style: none;
 }
-.page-name ul li i, .page-name ul li a{
-    margin: 0 10px;
+.page-name b{
+    color: #0071bc;
+    font-size: 30px;
+    font-weight: 400;
+}
+.page-name a{
+    margin: 5px 18px;
     text-decoration: none;
     color: #444;
+    font-size: 15px;
 }
-.page-name .US a{
+.page-name a b{
+    text-decoration: none;
+}
+.page-name .home-services{
+    text-decoration: none;
+    color: #777;
+}
+.page-name a{
     color: #222;
     text-decoration: underline;
-}
-.page-name ul b{
-    font-size: 30px;
-    font-weight: 500;
-    color: #0071bc;
 }
 /* Section Started From here below */
 .section-container{
@@ -114,60 +135,75 @@ nav{
     justify-content: center;
 }
 .left-side-categories{
-    width: 22%;
+    width: 21%;
     background-color: #0071bc;
     height: 160vh;
+    margin-left: 5px;
+}
+.left-side-categories .botom-border{
+    border-bottom: 1px solid #bdbbbb;
+    padding-bottom: 25px;
 }
 .left-side-categories h5{
-    font-size: 22px;
-    color: #fff;
-    margin: 20px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 .left-side-categories h5 a{
     text-decoration: underline;
     font-weight: 700;
+    font-size: 20px;
+}
+.left-side-categories .fa-reply{
+    margin-right: 5px;
 }
 .left-side-categories a{
     color: #fff;
     text-decoration: none;
     display: inline-block;
     font-weight: 500;
+    font-size: 15px;
     width: 250px;
-    margin: 10px 20px;
+    margin: 5px 20px;
 }
 .left-side-categories a:hover{
     text-decoration: underline;
 }
 .locations{
-    border-top: 1px solid #bdbbbb;
     border-bottom: 1px solid #bdbbbb;
     width: 90%;
     margin: 0 0 30px 10px;
 }
 .locations h5{
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
     margin: 15px 0 0 10px;
+}
+.locations a{
+    margin: 7px 10px;
 }
 /* Right Side Categories Section started here */
 .right-side-categories{
-    width: 60%;
-    margin: 10px 15px;
+    width: 62%;
+    margin: 0 15px 10px 12px;
 }   
 .right-side-categories .listing-top-tag{
     display: flex;
 } 
+.listing-top-tag .empty-div{
+    padding-bottom: 50px;
+}
 .right-side-categories .listing-top-tag a
 {
-    border-left: 1px solid #bdb6b6 ;
-    border-top: 1px solid #c7c0c0;
-    border-right: 1px solid #c7c2c2;
+    border-left: 1px solid #e9e6e6 ;
+    border-top: 1px solid #e9e6e6;
+    border-right: 1px solid #e9e6e6;
     border-radius: 4px 4px 0 0;
     text-decoration: none;
     color: #777;
-    padding: 10px;
+    padding: 8px 15px 8px 15px;
 }
 .listing-top-tag a b{
-    background-color: rgb(177, 49, 49);
+    background-color: rgb(226, 68, 68);
     color: #fff;
     border-radius: 3px;
     font-size: 12px;
@@ -179,6 +215,7 @@ nav{
 .listing-top-tag .empty-div{
     width: 80%;
     border-bottom: 1px solid #dad0d0;
+    padding-bottom: 10px;
 }
 .right-side-categories .sorting-service{
     list-style: none;
@@ -273,7 +310,7 @@ nav{
 .subscription{
     background-color: #DFC979;
     display: flex;
-    height: 26vh;
+    height: 23vh;
     align-items: center;
 }
 .subscribe-header{
@@ -281,31 +318,32 @@ nav{
     margin-left: 120px;
 }
 .subscribe-header h2{
-    padding: 15px 10px;
+    padding: 15px 0px;
     color: #222;
     font-size: 30px;
+    font-weight: bolder;
 }
 .subscribe-header h4
 {
-    font-size: 26px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #333;
 }
 .input-field{
-    margin-left: 150px;
+    margin-left: 120px;
     width: 70%;
-    height: 10vh;
+    height: 9vh;
     background-color: #222;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .input-field input{
-    padding: 10px;
+    padding: 0px 10px;
     font-size: 18px;
     outline: none;
     color: #555;
-    height: 10vh;
+    height: 9vh;
     border: none;
-    border-radius: 5px 0 0 5px;
+    border-radius: 4px 0 0 4px;
     width: 80%;
 }
 .input-field button{
@@ -317,7 +355,7 @@ nav{
     padding: 10px;
 }
 .subscribe-input{
-    width: 60%;
+    width: 70%;
 }
 .footer-links{
     background-color:#0071bc;
@@ -325,19 +363,19 @@ nav{
     height: 50vh;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    gap: 90px;
+    padding-top: 25px;
+    padding-left: 120px;
 }
 .footer-links-text .footer-ul li{
-    padding: 8px;
+    padding: 5px 0;
 }
 .footer-link-text{
     width: 400px;
 }
 .footer-links-text h4{
     color: #fff;
-    padding: 40px 0;
-    font-size: 24px;
+    padding: 15px 0 10px 0;
+    font-size: 22px;
     font-weight: 500;
 }
 .footer-links-text ul{
@@ -370,11 +408,29 @@ nav{
 }
 /* bottom footer started */
 .footer-copyright{
-    background-color: #054d7e;
-    height: 15vh;
+    background-color: #02619f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer-copyright{
-    text-align: center;
+.footer-copyright p{
     color: #ffffff;
-    padding-top: 40px;
+    font-size: 15px;
+    margin: 0;
+    padding: 25.5px;
+}
+/* Making Screen Responsive */
+
+/* 768
+1024
+1280 */
+
+@media screen and (max-width: 1200px){
+    header .header-ul{
+        margin-left: 130px;
+    }
+    .home-logo{
+        margin: 25px 80px;
+        width: 10%;
+    }
 }

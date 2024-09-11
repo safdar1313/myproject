@@ -11,6 +11,34 @@ nav
     display: flex;
     height: 20vh;
 }
+/* menu bars started */
+.menu-bar {
+    display: none;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+.menu-icon div {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    transition: 0.4s ease;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -6px);
+}
+/* Menu bar ended */
 .home-logo{
     margin: 25px 100px;
     width: 25%;
@@ -396,21 +424,22 @@ section .next-page-btn{
 .footer-links{
     background-color:#0071bc;
     width: 100%;
+    height: 45vh;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    gap: 90px;
+    padding-top: 25px;
+    padding-left: 120px;
 }
 .footer-links-text .footer-ul li{
-    padding: 8px;
+    padding: 5px 0;
 }
 .footer-link-text{
     width: 400px;
 }
 .footer-links-text h4{
     color: #fff;
-    padding: 25px 0;
-    font-size: 24px;
+    padding: 15px 0 10px 0;
+    font-size: 22px;
     font-weight: 500;
 }
 .footer-links-text ul{
@@ -421,7 +450,7 @@ section .next-page-btn{
     color: #fff;
 }
 .footer-ul{
-    margin-bottom: 40px;
+    padding: 0;
 }
 .footer-icons i{
     color: #ffffff;
@@ -443,14 +472,16 @@ section .next-page-btn{
 }
 /* bottom footer started */
 .footer-copyright{
-    background-color: #054d7e;
-    height: 20vh;
-}
-.footer-copyright{
+    background-color: #02619f;
     display: flex;
-    color: #ffffff;
     align-items: center;
     justify-content: center;
+}
+.footer-copyright p{
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+    padding: 25.5px;
 }
 /* Making Screen Responsive from here below*/
 @media screen and (min-width: 1162px) and (max-width:1326px)
@@ -746,10 +777,10 @@ section .next-page-btn{
     }
 }
 /* 576 - 767 */
-@media screen and (min-width:576px) and (max-width:767px)
+@media screen and (max-width:767px)
 {
     nav{
-        height: 30vh;
+        height: 20vh;
         width: 100%;
     }
     nav .header-ul{
@@ -769,22 +800,22 @@ section .next-page-btn{
         width: 120px;
     }
     .section-image{
-        height: 220vh;
+        height: 200vh;
      }
     .section-image .section-headings p{
         font-size: 60px;
     }
      .home-inputs{
         flex-direction: column;
-        width: 90%;
-        margin-left: 30px;
-        height: 100vh;
+        width: 75%;
+        margin-left: 90px;
+        height: 80vh;
         text-align: left;
     }
     .home-inputs .keyword-search-input{
         border-right: none;
         width: 100%;
-        padding: 24px;
+        padding: 0 24px;
         text-align: left;
     }
     .keyword-search-input input{
@@ -797,7 +828,7 @@ section .next-page-btn{
     .location-search-input{
         border-right:1px solid #ccc ;
         width: 100%;
-        margin: 24px;
+        margin: 0 24px;
     }
     .location-search-input input{
         padding: 10px 0;
@@ -807,7 +838,7 @@ section .next-page-btn{
     .category-input{
         border-right:none;
         width: 100%;
-        padding: 24px;
+        padding: 0 24px;
     }
     .category-input label{
         font-size: 16px;
@@ -840,6 +871,12 @@ section .next-page-btn{
         margin: 40px 0 0 10px;   
         width: 95%;
     }
+    section .categories-container h1{
+        margin: 50px 0 30px 105px;
+    }
+    section .underline{
+        margin: 0 0 50px 105px;
+    }
     .categories-selection{
         grid-template-columns: repeat(2,250px);
         gap: 10px;
@@ -852,17 +889,11 @@ section .next-page-btn{
         height: 40px;
         font-size: 22px;
     }
-    .categories-container h1{
-        margin: 50px 0 30px 40px;
-    }
-    .underline{
-        margin: 0 0 50px 40px;
-    }
     .listing-header h3{
-        margin: 50px 0 20px 40px;
+        margin: 50px 0 20px 100px;
     }
     .listing-header .listing-underline{
-        margin: 30px 0 30px 40px;
+        margin: 20px 0 30px 100px;
     }
     .listing-container{
         grid-template-columns: repeat(2, 250px);
@@ -877,7 +908,7 @@ section .next-page-btn{
         padding: 10px 0;
     }
     .listing-cards-footer .jmo-contact{
-        margin-top: 34px;
+        margin-top: 10px;
     }
     .listing-cards-footer button{
         width: 250px;
@@ -887,8 +918,9 @@ section .next-page-btn{
     }
     .listing-cards-footer .listing-btn{
         margin-top: 50px;
-        color: yellow;
-        background-color: #000; 
+    }
+    .listing-cards-footer .ss-landscape-btn{
+        margin-top: 47px;
     }
     /* bottom buttons location started  */
     .location-listing{
@@ -906,18 +938,20 @@ section .next-page-btn{
 
     /* footer */
     .subscription{
-        height: 52vh;
+        height: 40vh;
         flex-direction: column;
+        justify-content: center;
     }
     .subscribe-header{
         width: 100%;
-        margin-left: 50px;
+        margin-left: 150px;
     }
     .subscribe-header h4{
-        font-size: 20px;
+        font-size: 25px;
     }
     .subscribe-header h2{
         padding: 10px 0;
+        font-size: 32px;
     }
     .subscribe-input{
         width: 100%;
@@ -925,13 +959,14 @@ section .next-page-btn{
     }
     .subscribe-input .input-field{
         height: 15vh;
+        width: 80%;
     }
     .subscribe-input .input-field input{
         height: 15vh;
         width: 80%;
     }
     .input-field{
-        margin-left: 30px;
+        margin-left: 75px;
         width: 85%;
     }
     .input-field button{
@@ -940,7 +975,9 @@ section .next-page-btn{
     .footer-links{
         grid-template-columns: repeat(2,250px);
         gap: 40px;
-        padding: 20px 0;
+        padding: 20px 0 30px 0;
+        justify-content: center;
+        height:55vh ;
     }
     .footer-links-text h4{
         font-size: 20px;
@@ -959,4 +996,108 @@ section .next-page-btn{
         width: 30px;
         height: 30px;
     }
+}
+@media screen and (max-width:571px)
+{
+    nav{
+        height: 15vh;
+    }   
+    .menu-bar{
+        display: block;
+        margin: 35px 0 0 260px;
+    }
+    nav .header-ul{
+        transform:scaleY(0) ;
+        position: absolute;
+        transform-origin: top ;
+        transition:all 0.7s ease-in-out;
+        background-color: #0071bc;
+        margin: 95px 0 0 260px;
+        width: 250px;
+        border-right: 1px solid rgb(247, 239, 239);
+    }
+    .header-ul li a{
+        width: 250px;
+        color: #fff;
+        border: 1px solid rgb(226, 225, 225);
+        font-size: 18px;
+        padding: 5px;
+    }
+    .header-ul.showHeader {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: all 1s;
+    }
+    .section-headings h2{
+        font-size: 35px;
+    }
+    .section-headings p{
+        font-size: 40px;
+    }
+    .home-inputs{
+        margin-left: 65px;
+    }
+    .ul-below-searchBar
+    {
+        margin: 40px 0 0 60px;   
+        width: 80%;
+    }
+    /* Section Categories container started */
+    section .categories-container h1{
+        margin: 50px 0 30px 25px;
+        font-size: 30px;
+    }
+    section .underline{
+        margin: 0 0 50px 25px;
+    }
+    .categories-selection{
+        grid-template-columns: 500px;
+        gap: 30px;
+    }
+    .categories{
+        width: 500px;
+    }
+    .categories a i{
+        width: 20%;
+        height: 40px;
+        font-size: 22px;
+    }
+    .listing-header h3{
+        margin: 50px 0 20px 100px;
+    }
+    .listing-header .listing-underline{
+        margin: 20px 0 30px 100px;
+    }
+    .listing-container{
+        grid-template-columns: repeat(2, 250px);
+    }
+    .listing-container .listing-cards{
+        width: 250px;
+    }
+    .listing-cards img{
+        width: 250px;
+    }
+    .listing-boxes h4{
+        padding: 10px 0;
+    }
+    .listing-cards-footer .jmo-contact{
+        margin-top: 10px;
+    }
+    .listing-cards-footer button{
+        width: 250px;
+    }
+    .listing-cards-footer a{
+        font-size: 14px;
+    }
+    .listing-cards-footer .listing-btn{
+        margin-top: 50px;
+    }
+    .listing-cards-footer .ss-landscape-btn{
+        margin-top: 47px;
+    }
+
 }
