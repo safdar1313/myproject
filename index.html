@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The City Enterprise - USA Local Business Listings Website</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="./images/title-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="home-logo"><a href="#"><img src="./images/home logo.webp" alt="google.com"/></a></span>
+            <ul class="header-ul">
+                <li><a href="#">Write a review</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="log-in-btn"><i class="fa fa-user" aria-hidden="true"> </i> <span>Log in</span></li>
+                <li class="top-business-list"><a href="#">Add Your Business</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="section-image">
+            <div class="section-headings">
+                <h2>Join us and explore</h2>
+                <p>thousands of businesses</p>
+                <div class="home-inputs">
+                    <div class="keyword-search-input">
+                        <label for="Keyword">Keywords</label>
+                        <div class="d">
+                            <input type="text" placeholder="What are you looking for?"/>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="location-search-input">
+                        <label for="location">Location</label> <br>
+                        <input type="text" placeholder="City or postcode "/>
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <div class="category-input">
+                        <label for="category">Category</label>
+                        <div class="service-options">
+                             <select>
+                                <option >Search category</option>
+                                <option value="Automobiles">Automobiles</option>
+                                <option value="Phones-&-tablets">Phones & Tablets</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Furniture-&-Appliances">Furniture & Appliances</option>
+                                <option value="Real-estate">Real estate</option>
+                                <option value="Animals-&-Pets">Animals & Pets</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Beauty-&-Spa">Beauty & Spa</option>
+                                <option value="Jobs">Jobs</option>
+                                <option value="Services">Services</option>
+                                <option value="Learning">Learning</option>
+                                <option value="Local-Events">Local Events</option>
+                                <option value="Restaurants">Restaurants</option>
+                                <option value="Home-Services">Home Services</option>
+                                <option value="Legal-Services">Legal Services</option>
+                                <option value="Online-Marketing-&-Advertising">Online Marketing & Advertising</option>
+                                <option value="Education">Education</option>
+                                <option value="News-&-Media">News & Media</option>
+                                <option value="Locksmiths">Locksmiths</option>
+                                <option value="Installation">Installation</option>
+                                <option value="Hvca-Service">HVCA Service</option>
+                                <option value="Wild Life Removal">Wild Life Removal</option>
+                                <option value="Construction">Construction</option>
+                                <option value="Fence-Services">Fence Services</option>
+                             </select>
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="search-btn">
+                        <button type="submit"> <i class="fa fa-search" aria-hidden="true"> </i> Search</button>
+                    </div>
+                </div>
+                <div class="ul-below-searchBar">
+                    <li><a href="#">Automobiles</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Real estate</a></li>
+                    <li><a href="#">Fashion</a></li>
+                </div>
+            </div>
+        </div>  
+        <div class="categories-container">
+            <h1>Browse Popular Categories</h1>
+            <div class="underline"> </div>
+            <div class="categories-selection">
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-car"> </i>
+                        <p>Automobiles</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-mobile"> </i>
+                        <p>Phones & Tablets</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-laptop"> </i>
+                        <p>Electronics</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fas fa-couch"> </i>
+                        <p>Furniture & Appliances</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-home"> </i>
+                        <p>Real estate</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-paw"> </i>
+                        <p>Animals & Pets</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-tshirt"> </i>
+                        <p>Fashion</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-spa"> </i>
+                        <p>Beauty & Spa</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-briefcase"> </i>
+                        <p>Jobs</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-clipboard-list"> </i>
+                        <p>Services</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-graduation-cap"> </i>
+                        <p>Learning</p>
+                    </a>
+                </div>
+                <div class="categories">
+                    <a href="#">
+                        <i class="fa fa-calendar"> </i>
+                        <p>Local Events</p>
+                    </a>                    
+                </div>
+            </div>
+        </div>      
+        <div class="listing-header">
+            <h3>Latest Listings</h3>
+            <div class="listing-underline"> </div>
+        </div>
+        <div class="listing-container">
+            <div class="listing-cards">
+                <img src="./images/Saggy Floors.jpg" alt="Saggy Floors">
+                <div class="listing-boxes">
+                    <h4><a href="#">Saggy Floors</a></h4>
+                    <b>Rating 5.0  </b>
+                        <span>
+                            <i class="fa fa-star"> </i> 
+                            <i class="fa fa-star"> </i> 
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                    <p>We understand the critical role a solid  foundation plays in your property's overall stability. Our team is dedicated to identifying and resolving issue.</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p class="cell-number"> 
+                        <i class="fa fa-phone"> </i> <a href="#">(336) 362-0855</a> <br>
+                        <i class="fa fa-map-marker"> </i> <span>Greensboro</span><br>
+                        <i class="fa fa-globe"> </i> <a href="https://saggyfloors.com">https://saggyfloors.com</a>
+                    </p>
+                    <button class="listing-btn" type="button">View Business</button>
+                </div>
+            </div>
+            <div class="listing-cards">
+                <img src="./images/Jmo Import Automative.jpg" alt="Jmo Import Automative">
+                <div class="listing-boxes">
+                    <h4><a href="#">Jmo Import Automotive</a></h4>
+                    <b>Rating 5.0 </b>
+                        <span>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                        </span>
+                    <p>Jmo Import Automotive specializes in high-quality import car parts and accessories. We offer reliable, competitively priced solutions for all your aut...</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p> 
+                        <i class="fa fa-phone jmo-contact"> </i> <a href="#">(919) 374-6855</a><br>
+                        <i class="fa fa-map-marker"> </i> <span>Raleigh</span><br>
+                        <i class="fa fa-globe"> </i><a href="https://www.jmoautomotive.com/">jmoautomotive.com/</a>
+                    </p>
+                    <button class="listing-btn" type="button">View Business</button>
+                </div>
+            </div>
+            <div class="listing-cards">
+                <img src="./images/SS Landscape LLC.jpg" alt="SS Landscape">
+                <div class="listing-boxes">
+                    <h4><a href="#">SS Landscape</a></h4>
+                    <b>Rating 5.0 </b>
+                        <span>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                        </span>
+                    <p class="cell-number">SS Landscape is your trusted partner for exceptional landscaping, driveway pavers, and retaining wall Services. We specializesin transforming outdated</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p> 
+                        <i class="fa fa-phone"> </i>  <a href="#">(507) 207-0753</a><br>
+                        <i class="fa fa-map-marker"> </i><span>Mankato</span><br>
+                        <i class="fa fa-globe"> </i>
+                    </p>
+                    <button type="button">View Business</button>
+                </div>
+            </div>
+            <div class="listing-cards">
+                <img src="./images/Lighthouse Moving.jpg" alt="Lighthouse Moving">
+                <div class="listing-boxes">
+                    <h4><a href="#">Lighthouse Moving</a></h4>
+                    <b>Rating 5.0 </b>
+                        <span>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                        </span>
+                    <p class="cell-number lighthouse">Lighthouse Moving offers reliable, stress-free relocation services. We handle residential and commercial moves with care efficiency, and professional</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p> 
+                        <i class="fa fa-phone"> </i> <a href="#">(651) 387-2955</a><br>
+                        <i class="fa fa-map-marker"> </i><span>MINETONKA MLS</span><br>
+                        <i class="fa fa-globe"> </i>
+                    </p>
+                    <button class="listing-down-btn" type="button">View Business</button>
+                </div>
+            </div>
+            <div class="listing-cards">
+                <img src="./images/Fred Maintenance Services.jpg">
+                <div class="listing-boxes">
+                    <h4><a href="#">Fred's Maintenance Services, Inc</a></h4>
+                    <b>Rating 5.0 </b>
+                        <span>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                        </span>
+                    <p>Fred's Maintenance Services, Inc. offers comprehensive Handyman Services, Home Iprovement, and Gutter Services to meet all your home maintenance need</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p> 
+                        <i class="fa fa-phone"> </i> <a href="#">(972) 423-3153</a><br>
+                        <i class="fa fa-map-marker"> </i><span>Plano</span><br>
+                        <i class="fa fa-globe"> </i> <a href="https://fredshandy.com/">https://fredshandy.com/</a>
+                    </p>
+                    <button class="cm-and-fed" type="button">View Business</button>
+                </div>
+            </div>
+            <div class="listing-cards">
+                <img src="./images/C and M Heating and Air Conditioning.jpg" alt="C and M Heating and Air Conditioning">
+                <div class="listing-boxes">
+                    <h4><a href="#">C and M Heating and Air Conditioning</a></h4>
+                    <b>Rating 5.0 </b>
+                        <span>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                            <i class="fa fa-star"> </i>
+                        </span>
+                    <p>C and M Heating and Air Conditioning is your trusted partner for comprehensive HVAC services. We specializes in heating and air condititioning installation...</p>
+                </div>
+                <div class="listing-cards-footer">
+                    <p> 
+                        <i class="fa fa-phone"> </i><a href="#">(612) 490-1444</a><br>
+                        <i class="fa fa-map-marker"> </i><span>Anoka</span><br>
+                        <i class="fa fa-globe"> </i>
+                    </p>
+                    <button class="cm-and-fed" type="button">View Business</button>
+                </div>
+            </div>
+        </div>
+        <div class="next-page-btn">
+            <button><i class="fa fa-arrow-right"> View more </i></button>
+        </div>
+        <div class="location-listing">
+            <i class="fa fa-map-marker"></i>
+            <h2>Explore Business By Location</h2>
+        </div>
+        <div class="locations-container-btn">
+            <button><a href="#">New York City</a></button>
+            <button><a href="#">Houston</a></button>
+            <button><a href="#">Manhattan</a></button>
+            <button><a href="#">Dallas</a></button>
+            <button><a href="#">Los Angeles</a></button>
+            <button><a href="#">Queens</a></button>
+            <button><a href="#">San Antonio</a></button>
+            <button><a href="#">San Jose</a></button>
+            <button><a href="#">Chicago</a></button>
+            <button><a href="#">Phoenix</a></button>
+            <button><a href="#">San Diego</a></button>
+            <button><a href="#">Brooklyn</a></button>
+            <button><a href="#">Philadelphia</a></button>
+            <button><a href="#">The Bronx</a></button>
+            <button class="more-cities"><a href="#">More cities <i class="fa fa-arrow-right"></i></a>  </i></button>
+        </div>
+    </section>
+    <footer>
+        <div class="subscription">
+            <div class="subscribe-header">
+                <h2>Subscribe to Our Newsletter</h2>
+                <h4>Get all the latest information, sales, and offers.</h4>
+            </div>
+            <div class="subscribe-input">
+                <div class="input-field">
+                    <input type="email" placeholder="Enter your email address"/>
+                    <button type="submit">Subscribe</button>
+                </div>  
+            </div>   
+        </div> 
+        <div class="footer-links">
+            <div class="footer-links-text">
+                <h4>For Businesses</h4>
+                <ul class="footer-ul">
+                    <li><a href="#">Manage Your Listings</a></li>
+                    <li><a href="#">Add a Business</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-text">
+                <h4>Support</h4>
+                <ul class="footer-ul">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Business Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-text">
+                <h4>Follow Us</h4>   
+                <div class="footer-icons">
+                    <a href="#"><img src="./images/facebook icon.png" alt="Facebook icon"></a>
+                    <a href="#"><img src="./images/twitter icon.png" alt="twitter icon"></a>
+                    <a href="#"><img src="./images/instagram icon.png" alt="instagram icon"></a>
+                    <a href="#"><img src="./images/linkedin icon.png" alt="Linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+                <p>Copyright &#169 The City Enterprise. All Rights Reserved 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

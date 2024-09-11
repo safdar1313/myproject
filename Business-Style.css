@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Montserrat',sans-serif,arial,helvetica ;
+}
+header
+{
+    width: 100%;
+    padding: 0.1rem 0;
+    display: flex;
+    height: 20vh;
+}
+.home-logo{
+    margin: 25px 100px;
+    width: 25%;
+}
+.home-logo a img{
+    width: 150px;
+}
+.header-ul{
+    margin-left: 200px;
+    display: flex;
+    list-style: none;
+    width: 45%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-ul li a{
+    color: #777;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.header-ul .log-in-btn{
+    background-color: #0071bc;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.header-ul li a:hover{
+    color: #333;
+}
+.header-ul .log-in-btn:hover{
+    color: #444;
+    cursor: pointer;
+}
+/* Navbar Started */
+nav .navbar-ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0 40px 90px;
+}
+.navbar-ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: 500;
+    color: #0071bc;
+    border-right: 2px solid #0071bc;
+}
+/* Section Started From here */
+section .service-info{
+    display: flex;
+    margin: 20px 0 50px 100px ;
+}
+.service-info img{
+    width: 25%;
+    height: 20%;
+    margin: 20px 20px 30px 0 ;
+}
+.service-details h1{
+    font-size: 40px;
+    color: #222;
+    font-weight: 700;
+}
+.service-details-btn .yellow-btn{
+    padding: 10px;
+    background-color: rgb(245, 180, 3);
+    border: none;
+    margin: 0 6px;
+    border-radius: 3px; 
+    font-size: 15px;
+}
+.service-details-btn .red-btn{
+    padding: 10px 15px;
+    background-color:rgb(250, 56, 56);
+    color: #fff;
+    margin: 0 6px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.service-details-btn .blue-btn{
+    padding: 10px 15px;
+    background-color: #0071bc;
+    color: #fff;
+    border: none;
+    margin: 0 6px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.service-details-btn .green-btn{
+    padding: 10px 15px;
+    background-color:rgb(21, 150, 79);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 6px;
+    font-size: 15px;
+}
+.service-details-btn i{
+    margin: 0 5px;
+}
+.business-description h2{
+    margin: 40px 0 20px 0px;
+    color: #222;
+    font-size: 30px;
+    font-weight: 600;
+}
+.underline{
+    width: 110px;
+    height: 2px;
+    background-color: #3C25A4;
+    margin: 0 0 50px 0px;
+}
+/* Main Section Container started here */
+section .section-container
+{
+    width: 85%;
+    display: flex;
+    margin-left: 110px;
+}
+.section-container .left-side-container{
+    width: 65%;
+}
+.section-container .right-side-container{
+    width: 30%;
+    margin-left: 20px;
+}
+.photo-gallery h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.left-side-container .img-crousel{
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(88, 86, 86);
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+}
+.star-rating{
+    font-size: 24px;
+    color: #ccc;
+}
+.star{
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.star:hover, .star:hover ~ .star{
+    color: #0071bc;
+}
+.left-side-container .write-review{
+    margin: 50px 0;
+}
+.write-review textarea{
+    width: 95%;
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 4px;
+    margin: 20px 0;
+    height: 25vh;
+    outline: none;
+    padding: 20px;
+}
+.left-side-container .submit-btn{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0071bc;
+    color: #fff;
+}
+/* Left Side Container completed here */
+
+/* Right side container started from here below */
+.right-side-container .contact-info{
+    border: 1px solid rgb(211, 205, 205);
+    margin: 40px 0;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.right-side-container button{
+    padding: 7px 10px;
+    margin: 5px;
+    border: 1px solid rgb(75, 187, 75);
+    border-radius: 3px;
+    color: green;
+}
+.right-side-container .iframes{
+    width: 80%;
+}
+.card-body .fa{
+    margin: 18px 10px;
+    font-size: 23px;
+}
+.business-hours .card{
+    margin-top: 20px;
+}
+.list-group-item .span-time{
+    /* width: 100%; */
+    background-color: #0071bc;
+    text-align: right;
+}
+.right-side-container .business-pages{
+    border: 1px solid rgb(207, 204, 204);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+.right-side-container .business-pages{
+    padding: 20px;
+}
+.business-pages a{
+    padding: 10px;
+}
+/* Footer Started from here */
+.subscription{
+    margin-top: 40px;
+    background-color: #DFC979;
+    display: flex;
+    height: 26vh;
+    align-items: center;
+}
+.subscribe-header{
+    width: 40%;
+    margin-left: 120px;
+}
+.subscribe-header h2{
+    padding: 15px 10px;
+    color: #222;
+    font-size: 30px;
+}
+.subscribe-header h4
+{
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+}
+.input-field{
+    margin-left: 150px;
+    width: 70%;
+    height: 10vh;
+    background-color: #222;
+    border-radius: 5px;
+}
+.input-field input{
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    color: #555;
+    height: 10vh;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+}
+.input-field button{
+    width: 15%;
+    background-color: #222;
+    font-size: 16px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+}
+.subscribe-input{
+    width: 60%;
+}
+.footer-links{
+    background-color:#0071bc;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 90px;
+}
+.footer-links-text .footer-ul li{
+    padding: 8px;
+}
+.footer-link-text{
+    width: 400px;
+}
+.footer-links-text h4{
+    color: #fff;
+    padding: 25px 0;
+    margin-left: 35px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-links-text ul{
+    list-style: none;
+}
+.footer-ul a, .footer-ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-ul{
+    margin-bottom: 40px;
+}
+.footer-icons i{
+    color: #ffffff;
+    font-size: 25px;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons img{
+    width: 45px;
+    height: 45px;
+    margin: 0 8px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.footer-ul a:hover{
+    color: rgb(212, 208, 208);
+}
+/* bottom footer started */
+.footer-copyright p{
+    margin: 0;
+}
+.footer-copyright{
+    background-color: #054d7e;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-copyright{
+    color: #ffffff;
+}

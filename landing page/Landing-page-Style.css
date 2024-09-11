@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, Helvetica;
+}
+header{
+    display: flex;
+    padding: 16px 0;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.header-logo img{
+    margin: 5px 113px;
+}
+.header-ul{
+    display: flex;
+    list-style: none;
+    padding: 16px 0;
+    width: 82%;
+    margin: 13px 115px;
+}
+.header-ul li{
+    margin-right: 36px;
+}
+.header-ul li a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #bd0101;
+    font-weight: 600;
+}
+.header-ul span{
+    font-size: 12px;
+    border-radius: 50%;
+    color: #bd0101;
+}
+.header-ul li:hover span{
+    transition: 0.3s ease-in;
+    background-color: #bd0101;
+    border-radius: 50%;
+}
+/* Section started from here */
+section .skew-bg {
+    content: '';
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    width: 47%; 
+    background: #bd0101;
+    transform: skew(-22deg);
+    right: -10vw;
+    max-width: 100%;
+    overflow: hidden; 
+}
+body, html{
+    overflow-x: hidden;
+}
+body{
+    padding-top: 110px;
+}
+.container{
+    width: 90%;
+    display: flex;
+    padding-top: 50px;
+    margin-left: 115px;
+}
+.container .section-data{
+    width: 45%;
+}
+.section-data h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.container img{
+    border: 15px solid #e7e7e7;
+    margin: 28px 0 0 25px;
+}
+.container p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.section-data button{
+    background-color: #bd0101;
+    border: none;
+    border-radius: 40px;
+    margin:15px 0;
+    padding: 12px 19px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.section-data button:hover{
+    cursor:pointer;
+    background-color: #800101FF;
+}
+.fixed-contact-btn button{
+    border: none;
+    margin: 0 0 10px 20px;
+    box-shadow: 0 0 15px #BD0101FF;
+    border-radius: 50%;
+    position: fixed;
+}
+.fixed-contact-btn i{
+    background-color: #bd0101;
+    padding: 18px;
+    color: #fff;
+    text-align: left;
+    border: none;
+    border-radius: 50%;
+}
+.middle-section-nav{
+    margin-top: 90px;
+    text-align: center;
+    background-color: #800101FF;
+}
+.middle-section-nav p{
+    padding: 30px 0;
+}
+section .middle-section-nav p{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+/* Crousel Section started */
+.crousel-section{
+    display: flex;
+    width: 80%;
+    margin: 50px 0 10px 110px;
+}
+.carousel-content-img{
+    margin-top: 50px;
+}
+.img-text-crousel{
+    width: 50%;
+    margin-left: 30px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(88, 86, 86);
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+}
+.section-data b{
+    padding: 15px 0;
+    font-size: 20px;
+}
+.section-services-container{
+    background-color: #dee2e6;
+    height: 110vh;
+}
+.Our-services h2{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    color: #000;
+}
+/* Bubbles started */
+.section-services{
+    width: 80%;
+    margin: 15px 110px;
+}
+.service-bubble {
+    width: 32%;
+    background-color: #d50000;
+    color: white;
+    padding: 10px 0;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .service-bubble::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #d50000; 
+  }
+  /* Installation Service Page Started*/
+.section-services-pages .installation-page{
+    margin: 50px 0 20px 100px;
+    width: 85%;
+    justify-content: space-between;
+}
+.installation-page .page-image{
+    width: 48%;
+}
+.installation-page .page-data{
+    width: 45%;
+}
+.page-data strong{
+    font-size: 32px;
+    font-weight: 600;
+}
+.page-image img{
+    margin-top: 40px;
+}
+.service-bubble.active{
+    background-color: #a02323;
+}
+/* Repair Service Page started */
+.section-services-pages .repair-page{
+    margin: 50px 0 20px 100px;
+    width: 85%;
+    justify-content: space-between;
+  }
+.repair-page .page-image{
+    width: 48%;
+}
+.repair-page .page-data{
+    width: 45%;
+}
+.repair-page strong{
+    font-size: 32px;
+    font-weight: 600;
+}
+/* Maintenance page started */
+.section-services-pages .maintenance-page{
+    margin: 50px 0 20px 100px;
+    width: 85%;
+    justify-content: space-between;
+  }
+.maintenance-page .page-image{
+    width: 48%;
+}
+.maintenance-page .page-data{
+    width: 45%;
+}
+.maintenance-page strong{
+    font-size: 32px;
+    font-weight: 600;
+}
+/* Gallery Section Started */
+section .service-gallery{
+    background-color: #800101FF;
+    height: 37vh;
+    position: relative;
+}
+.service-gallery h3{
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+/* carousel started */
+.gallery-carousel{
+    width: 85%;
+    margin: -75px 0 0px 120px;
+    z-index: 2;
+}
+.carousel-item .carousel-img{
+    margin-right: 10px;
+    height: 300px;
+    width: 380px;
+}
+.youtube-iframe iframe{
+    width: 85%;
+    margin: 80px 120px 40px 120px;
+    border-radius: 5px;
+    height: 70vh;
+}
+.above-footer-container{
+    border: 1px solid rgb(202, 195, 195);
+    display: flex;
+    width: 80%;
+    margin: 0px 0 50px 110px;
+    justify-content: space-between;
+}
+.above-footer-container .map-iframe{
+    width: 53%;
+}
+.map-iframe iframe{
+    height: 100%;
+}
+.above-footer-container .submit-form{
+    width: 45%;
+}
+.form-header{
+    font-size: 24px;
+    height: 15vh;
+    font-weight: 350;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input{
+    margin: 10px 0;
+    width: 95%;
+    padding: 6px 8px;
+    border: 1px solid rgb(219, 216, 216);
+    border-radius: 5px;
+}
+form textarea{
+    padding: 10px;
+    height: 35vh;
+    width: 95%;
+    border: 1px solid rgb(224, 218, 218);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+form button{
+    width: 95%;
+    background-color: #bd0101;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 20px;
+}
+form i, form a{
+    color: #444;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 18px;
+}
+/* footer started from here */
+footer{
+    background-color: #800101FF;
+}
+.footer-head{
+    padding: 20px 30px;
+}
+.footer-head strong{
+    font-size: 24px;
+    color: #fff;
+}
+.footer-head b{
+    font-size: 18px;
+    color: #fff;
+}
+.footer-section{
+    display: flex;
+    margin: 10px 30px;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.repair-section{
+    margin: 0 300px 0 250px;
+}
+.footer-section h5{
+    font-weight: 600;
+}
+.footer-section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+.install-section a, .repair-section a, 
+.maintain-section a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section .fa-chevron-right{
+    padding: 2px 10px 2px 0;
+}
+/* Bottom footer started */
+.bottom-footer p
+{
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 0px !important;
+    color: #fff;
+}
+
+@media screen and (min-width: 1280px) {
+.carousel-control-next.controls{
+    right: -129px;
+}
+.carousel-control-prev.controls{
+    left: -129px;
+}
+}   
