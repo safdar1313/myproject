@@ -7,9 +7,8 @@
 nav
 {
     width: 100%;
-    padding: 0.1rem 0;
+    padding: 29px 15px 25px 15px;
     display: flex;
-    height: 20vh;
 }
 /* menu bars started */
 .menu-bar {
@@ -40,19 +39,21 @@ nav
 }
 /* Menu bar ended */
 .home-logo{
-    margin: 25px 100px;
-    width: 25%;
+    display: flex;
+    width: 24.2%;
+    justify-content: center;
 }
 .home-logo a img{
-    width: 150px;
+    width: 120px;
 }
 nav .header-ul{
-    margin-left: 200px;
     display: flex;
     list-style: none;
-    width: 45%;
+    width: 70.5%;
     align-items: center;
-    justify-content: space-evenly;
+    padding-bottom: 5px;
+    gap: 40px;
+    justify-content: right;
 }
 .header-ul li a{
     color: #777;
@@ -298,6 +299,9 @@ nav .header-ul{
 .listing-boxes{
     padding: 20px 0 10px 10px;
 }
+.listing-boxes .fa-star{
+    color: #0071bc;
+}
 .listing-cards-footer .cm-and-fed{
     margin-top: 46px;
 }
@@ -473,11 +477,9 @@ section .next-page-btn{
 /* bottom footer started */
 .footer-copyright{
     background-color: #02619f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .footer-copyright p{
+    text-align: center;
     color: #ffffff;
     font-size: 15px;
     margin: 0;
@@ -486,20 +488,8 @@ section .next-page-btn{
 /* Making Screen Responsive from here below*/
 @media screen and (min-width: 1162px) and (max-width:1326px)
 {
-    nav .header-ul{
-        margin-left: 100px;
-    }
-    nav{
-        height: 25vh;
-    }
     .section-image .section-headings p{
         font-size: 105px;
-    }
-    nav .home-logo{
-        margin: 25px 100px;
-    }
-    nav .home-logo a img{
-        width: 45%;
     }
     .section-image{
         height: 150vh;
@@ -536,24 +526,11 @@ section .next-page-btn{
 }
 @media screen and (min-width:992px) and (max-width:1161px)
 {
-    nav{
-        height: 25vh;
-    }
-    nav .header-ul{
-        margin-left: 50px;
-        width: 60%;
-    }
     .section-image .section-headings p{
         font-size: 105px;
     }
-    nav .home-logo{
-        margin: 25px 100px;
-    }
-    nav .home-logo a img{
-        width: 45%;
-    }
-    .section-image{
-        height: 150vh;
+    section .section-image{
+        height: 105vh;
      }
      .home-inputs{
         width: 85%;
@@ -637,24 +614,9 @@ section .next-page-btn{
     }
 }
 /* 768 - 991 */
-@media  screen and (min-width:768px) and (max-width:1024px) {
-    
-    nav{
-        height: 25vh;
-        width: 100%;
-    }
-    nav .header-ul{
-        margin-left: 0;
-        width: 70%;
-    }
+  @media  screen and (min-width:768px) and (max-width:1024px) {
     .section-image .section-headings p{
         font-size: 55px;
-    }
-    nav .home-logo{
-        margin: 30px 30px;
-    }
-    nav .home-logo a img{
-        width: 120px;
     }
     .section-image{
         height: 140vh;
@@ -673,7 +635,6 @@ section .next-page-btn{
     .category-input .service-options select{
         width: 120px;
     }
-
     .ul-below-searchBar{
         margin-top: 40px;
         width: 70%;
@@ -691,16 +652,16 @@ section .next-page-btn{
         font-size: 22px;
     }
     .categories-container h1{
-        margin: 50px 0 30px 65px;
+        margin: 50px 0 30px 100px;
     }
     .underline{
-        margin: 0 0 50px 70px;
+        margin: 0 0 50px 100px;
     }
     .listing-header h3{
-        margin: 50px 0 20px 65px;
+        margin: 50px 0 20px 100px;
     }
     .listing-header .listing-underline{
-        margin: 30px 0 30px 70px;
+        margin: 30px 0 30px 100px;
     }
     .listing-container{
         grid-template-columns: repeat(2, 300px);
@@ -720,7 +681,7 @@ section .next-page-btn{
     .listing-cards-footer .listing-btn{
         margin-top: 43px;
     }
-    /* bottom buttons location started  */
+    /* bottom buttons location started */
     .location-listing{
         margin: 50px 0 30px 40px;
     }
@@ -776,250 +737,28 @@ section .next-page-btn{
         height: 30px;
     }
 }
-/* 576 - 767 */
-@media screen and (max-width:767px)
-{
-    nav{
-        height: 20vh;
-        width: 100%;
-    }
-    nav .header-ul{
-        margin-left: 0;
-        width: 70%;
-    }
-    .header-ul li a{
-        display: flex;
-        width: 50px;
-        justify-content: space-between;
-    }
-   
-    nav .home-logo{
-        margin: 25px 0 20px 25px;
-    }
-    nav .home-logo a img{
-        width: 120px;
-    }
-    .section-image{
-        height: 200vh;
-     }
-    .section-image .section-headings p{
-        font-size: 60px;
-    }
-     .home-inputs{
-        flex-direction: column;
-        width: 75%;
-        margin-left: 90px;
-        height: 80vh;
-        text-align: left;
-    }
-    .home-inputs .keyword-search-input{
-        border-right: none;
-        width: 100%;
-        padding: 0 24px;
-        text-align: left;
-    }
-    .keyword-search-input input{
-        border: none;
-        width: 90%;
-        padding: 10px 2px;
-        outline: none;
-        font-size: 16px;
-    }
-    .location-search-input{
-        border-right:1px solid #ccc ;
-        width: 100%;
-        margin: 0 24px;
-    }
-    .location-search-input input{
-        padding: 10px 0;
-        font-size: 16px;
-        width: 85%;
-    }
-    .category-input{
-        border-right:none;
-        width: 100%;
-        padding: 0 24px;
-    }
-    .category-input label{
-        font-size: 16px;
-    }
-    .category-input i{
-        font-size: 25px;
-    }
-    .category-input .service-options option{
-        font-size: 16px;
-    }
-    .service-options select{
-        outline: none;
-        border: none;
-        font-size: 16px;
-        margin-top: 10px;
-        appearance: none;
-        width: 90%;
-    }
-    .search-btn{
-        margin-top: 20px;
-        width: 95%;
-        height: 100px;
-    } 
-    .search-btn button{
-        width: 100%;
-        padding: 0;
-        height: 80px;
-    }
-    .ul-below-searchBar{
-        margin: 40px 0 0 10px;   
-        width: 95%;
-    }
-    section .categories-container h1{
-        margin: 50px 0 30px 105px;
-    }
-    section .underline{
-        margin: 0 0 50px 105px;
-    }
-    .categories-selection{
-        grid-template-columns: repeat(2,250px);
-        gap: 10px;
-    }
-    .categories{
-        width: 250px;
-    }
-    .categories a i{
-        width: 20%;
-        height: 40px;
-        font-size: 22px;
-    }
-    .listing-header h3{
-        margin: 50px 0 20px 100px;
-    }
-    .listing-header .listing-underline{
-        margin: 20px 0 30px 100px;
-    }
-    .listing-container{
-        grid-template-columns: repeat(2, 250px);
-    }
-    .listing-container .listing-cards{
-        width: 250px;
-    }
-    .listing-cards img{
-        width: 250px;
-    }
-    .listing-boxes h4{
-        padding: 10px 0;
-    }
-    .listing-cards-footer .jmo-contact{
-        margin-top: 10px;
-    }
-    .listing-cards-footer button{
-        width: 250px;
-    }
-    .listing-cards-footer a{
-        font-size: 14px;
-    }
-    .listing-cards-footer .listing-btn{
-        margin-top: 50px;
-    }
-    .listing-cards-footer .ss-landscape-btn{
-        margin-top: 47px;
-    }
-    /* bottom buttons location started  */
-    .location-listing{
-        margin: 50px 0 30px 40px;
-    }
-    .locations-container-btn{
-        grid-template-columns: repeat(2, 250px);
-    }
-    .locations-container-btn button{
-        width: 250px;
-    }
-    .locations-container-btn .more-cities{
-        margin-left: 130px;
-    }
-
-    /* footer */
-    .subscription{
-        height: 40vh;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .subscribe-header{
-        width: 100%;
-        margin-left: 150px;
-    }
-    .subscribe-header h4{
-        font-size: 25px;
-    }
-    .subscribe-header h2{
-        padding: 10px 0;
-        font-size: 32px;
-    }
-    .subscribe-input{
-        width: 100%;
-        margin-top: 20px;
-    }
-    .subscribe-input .input-field{
-        height: 15vh;
-        width: 80%;
-    }
-    .subscribe-input .input-field input{
-        height: 15vh;
-        width: 80%;
-    }
-    .input-field{
-        margin-left: 75px;
-        width: 85%;
-    }
-    .input-field button{
-        font-size: 15px;
-    }
-    .footer-links{
-        grid-template-columns: repeat(2,250px);
-        gap: 40px;
-        padding: 20px 0 30px 0;
-        justify-content: center;
-        height:55vh ;
-    }
-    .footer-links-text h4{
-        font-size: 20px;
-    }
-    .footer-ul li a{
-        font-size: 14px;
-    }
-    .footer-links-text h4{
-        padding: 0 0 10px 0;
-        margin: 0;
-    }
-    .footer-links-text .footer-ul{
-        margin-bottom: 0px;
-    }
-    .footer-icons a img{
-        width: 30px;
-        height: 30px;
-    }
-}
-@media screen and (max-width:571px)
-{
-    nav{
-        height: 15vh;
-    }   
+@media screen and (max-width:790px)
+{ 
     .menu-bar{
-        display: block;
-        margin: 35px 0 0 260px;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
     nav .header-ul{
         transform:scaleY(0) ;
         position: absolute;
+        top: 120px;
+        right: 0;
         transform-origin: top ;
         transition:all 0.7s ease-in-out;
         background-color: #0071bc;
-        margin: 95px 0 0 260px;
         width: 250px;
         border-right: 1px solid rgb(247, 239, 239);
     }
     .header-ul li a{
         width: 250px;
         color: #fff;
-        border: 1px solid rgb(226, 225, 225);
         font-size: 18px;
         padding: 5px;
     }
@@ -1032,72 +771,236 @@ section .next-page-btn{
         transform-origin: top;
         transition: all 1s;
     }
+    .section-headings{
+        width: 100%;
+    }
     .section-headings h2{
-        font-size: 35px;
+        font-size: 30px;
     }
-    .section-headings p{
-        font-size: 40px;
+    .section-image .section-headings p{
+        font-size: 27px;
     }
+    .section-image{
+        height: 170vh;
+        padding: 0 20px;
+    }   
     .home-inputs{
-        margin-left: 65px;
+        width:100%;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: none;
+        align-items: none;
+        color: black;
+        font-size: 16px;
     }
+    .home-inputs .keyword-search-input{
+        border-right: none;
+        width: 85%;
+        padding-left: 0px;
+    }
+    .keyword-search-input label{
+        font-size: 16px;
+        font-weight: 600;
+        color: #222;
+    }
+    .keyword-search-input input{
+        background-color: #ffffff;
+        border: none;
+        width: 85%;
+        padding: 10px 0;
+        outline: none;
+        font-size: 17px;
+        color: #999;
+    }
+    .location-search-input{
+        border-right:none ;
+        width: 85%;
+        padding-left: 0px;
+    }
+    .location-search-input label{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .location-search-input input{
+        border: none;
+        outline: none;
+        padding: 0;
+        width:85%;
+        font-size: 17px;
+        color: #999;
+    }
+    .location-search-input i{
+        font-size: 25px;
+    }
+    .category-input{
+        border-right: none;
+        width: 85%;
+        padding-left: 0px;
+    }
+    .category-input label{
+        font-size: 16px;
+        font-weight: 600;
+        color: #222;
+    }
+    .category-input i{
+        font-size: 25px;
+    }
+    .category-input .service-options option{
+        font-size: 16px;
+    }
+    .category-input .service-options select{
+        outline: none;
+        border: none;
+        font-size: 16px;
+        margin-top: 30px;
+        appearance: none;
+        width: 85%;
+    }
+    .search-btn{
+        width: 85%;
+        height: fit-content;
+    } 
+    .search-btn button{
+        width: 100%;
+        padding: 35px;
+        background-color: #0071bc;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    /*  */
     .ul-below-searchBar
     {
-        margin: 40px 0 0 60px;   
-        width: 80%;
+        margin: 20px 0;   
+        width: 100%;
+        flex-wrap: wrap ;
+        height: 15vh;
+    }
+    .ul-below-searchBar li a{
+        margin: 0px;
+        font-size: 20px;
     }
     /* Section Categories container started */
     section .categories-container h1{
-        margin: 50px 0 30px 25px;
+        margin: 50px 0 30px 65px;
         font-size: 30px;
+        font-weight: 500;
     }
     section .underline{
-        margin: 0 0 50px 25px;
+        margin: 0 0 50px 65px;
     }
     .categories-selection{
-        grid-template-columns: 500px;
+        grid-template-columns: 340px;
         gap: 30px;
     }
     .categories{
-        width: 500px;
+        width: 340px;
     }
     .categories a i{
-        width: 20%;
-        height: 40px;
-        font-size: 22px;
+        width: 25%;
+        height: 60px;
+        padding-top: 15px;
+        font-size: 25px;
+    }
+    .categories  p{
+        font-size: 19px;
     }
     .listing-header h3{
-        margin: 50px 0 20px 100px;
+        margin: 50px 0 20px 25px;
     }
     .listing-header .listing-underline{
-        margin: 20px 0 30px 100px;
+        margin: 20px 0 30px 25px;
     }
     .listing-container{
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: 350px;
     }
     .listing-container .listing-cards{
-        width: 250px;
+        width: 350px;
     }
     .listing-cards img{
-        width: 250px;
+        width: 350px;
     }
-    .listing-boxes h4{
-        padding: 10px 0;
+    .listing-cards h4 a{
+        font-size: 25px;
     }
     .listing-cards-footer .jmo-contact{
         margin-top: 10px;
     }
     .listing-cards-footer button{
-        width: 250px;
+        width: 350px;
+        font-size: 18px;
     }
     .listing-cards-footer a{
+        font-size: 18px;
+    }
+    /* location Listing started */
+    .location-listing{
+        margin: 0;
+    }
+    .location-listing h2{
+        font-size: 24px;
+    }
+    .locations-container-btn{
+        grid-template-columns: 350px;
+    }
+    .locations-container-btn button{
+        width: 350px;
+    }
+    .locations-container-btn .more-cities{
+        margin-left: 0px;
+    }
+    /* Footer started from here */
+    .subscription{
+        flex-direction: column;
+        align-items: none;
+    }
+    .subscribe-header{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .subscribe-header h2{
+        font-size:19px ;
+    }
+    .subscribe-header h4{
+        font-size: 21px;
+    }
+    .subscribe-input{
+        width: 90%;
+        margin: 0;
+    }
+    .subscribe-input .input-field{
+        height: 9vh;
+        width: 90%;
+    }
+    .subscribe-input .input-field input{
+        height: 9vh;
+        width: 63%;
+    }
+    .input-field{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .input-field button{
+        width: 25%;
+    }
+    .footer-links{
+        height:65vh;
+        grid-template-columns: 200px 280px;
+        padding-left: 27px;
+    }
+    .footer-links .footer-links-text{
+        width: 200px;
+    }
+    .footer-ul li a{
         font-size: 14px;
     }
-    .listing-cards-footer .listing-btn{
-        margin-top: 50px;
+    .footer-links-text h4{
+        padding: 20px 0 10px 0;
+        margin: 0;
+        font-size: 23px;
     }
-    .listing-cards-footer .ss-landscape-btn{
-        margin-top: 47px;
+    .footer-links-text .footer-ul li{
+        font-size: 20px;
     }
-
 }
