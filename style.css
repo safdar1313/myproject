@@ -763,7 +763,6 @@ section .next-page-btn{
         padding: 5px;
     }
     .header-ul.showHeader {
-        display: block;
         flex-direction: column;
         align-items: center;
         justify-content: center;
