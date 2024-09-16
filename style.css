@@ -76,10 +76,6 @@ nav .header-ul{
     cursor: pointer;
 }
 /* Section Area Started */
-section{
-    width: 100%;
-    padding: 0 50px;
-}
 .section-image{
     background-image: url(./images/body-image.webp);
     height: 100vh;
@@ -226,6 +222,10 @@ section{
     transform: scaleY(1);
 }
 /* Browse categories Selection started from here */
+section .categories-container{
+    width: 100%;
+    padding: 0 30px;
+}
 .categories-container h1{
     margin: 50px 0 30px 120px;
     color: #222;
@@ -282,6 +282,8 @@ section{
     margin: 40px 0 50px 120px;
 }
 .listing-container{
+    width: 100%;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(3, 350px);
     gap: 20px;
@@ -371,6 +373,8 @@ section .next-page-btn{
     font-size: 16px;
 }
 .locations-container-btn{
+    width: 100%;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(4, 250px);
     gap: 30px;
