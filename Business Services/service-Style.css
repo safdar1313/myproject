@@ -558,6 +558,7 @@ nav form{
         justify-content: end;
     }
     header .header-ul{
+        display: block;
         transform:scaleY(0) ;
         position: absolute;
         top: 120px;
@@ -585,7 +586,6 @@ nav form{
     }
     .header-ul.showHeader {
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         transform: scaleY(1);
         transform-origin: top;

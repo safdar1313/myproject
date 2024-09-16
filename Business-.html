@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <header>
         <span class="home-logo"><a href="#"><img src="./images/home logo.webp" alt="google.com" /></a></span>
         <ul class="header-ul">
@@ -33,6 +32,15 @@
             <li><a href="#">Electricians & Electronic Repair</a></li>
             <li><a href="#">Rapid Pro Services INC</a></li>
         </ul>
+        <div class="menu-burgor"></div>
+        <div class="menu-bar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
     </nav>
     <section>
         <div class="service-info">
@@ -121,10 +129,10 @@
                     <button> <i class="fa fa-briefcase"></i><span>Email Us</span></button>
                 </div>
                 <div class="iframes">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card" style="width: 100%;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1791418.7128418093!2d-81.186064!3d28.723590000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1725858723555!5m2!1sen!2sus"
-                            width="350" height="350" style="border:0; border-radius: 10;" allowfullscreen="" loading="lazy"
+                            style="border:0; border-radius: 10;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="card-image-top"></iframe>
                         <div class="card-body">
                             <a href="#"> <i class="fa fa-phone"></i> (407) 489-1867</a><br>
@@ -135,7 +143,7 @@
                     </div>
                 </div>
                 <div class="business-hours">
-                    <div class="card" style="width: 22rem;">
+                    <div class="card" style="width: 100%;">
                         <div class="card-body">
                           <h5 class="card-title">Business Hours</h5>
                         </div>
@@ -150,7 +158,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="business-pages " style="width: 22rem;">
+                <div class="business-pages " style="width: 100%;">
                     <b>Business Pages</b>
                     <div class="air-conditioning-services">
                         <strong> <br>Air Conditioning Services</strong><br>
@@ -182,19 +190,19 @@
 
     </section>
     <footer>
-        <footer>
-            <div class="subscription">
-                <div class="subscribe-header">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <h4>Get all the latest information, sales, and offers.</h4>
-                </div>
-                <div class="subscribe-input">
-                    <div class="input-field">
-                        <input type="email" placeholder="Enter your email address" />
-                        <button type="submit">Subscribe</button>
-                    </div>
+        <div class="subscription">
+            <div class="subscribe-header">
+                <h2>Subscribe to Our Newsletter</h2>
+                <h4>Get all the latest information, sales, and offers.</h4>
+            </div>
+            <div class="subscribe-input">
+                <div class="input-field">
+                    <input type="email" placeholder="Your Email" />
+                    <button type="submit">Subscribe</button>
                 </div>
             </div>
+        </div>
+        <div class="footer-links-container">
             <div class="footer-links">
                 <div class="footer-links-text">
                     <h4>For Businesses</h4>
@@ -229,11 +237,19 @@
             <div class="footer-copyright">
                 <p>Copyright &#169 The City Enterprise. All Rights Reserved 2024</p>
             </div>
-        </footer>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script>
+            function toggleMenu() {
+                let menuIcon = document.querySelector(".menu-icon");
+                let headerContent = document.querySelector('.header-ul');
+                menuIcon.classList.toggle("change");
+                headerContent.classList.toggle('showHeader')
+            }
+        </script>
 </body>
 
 </html>

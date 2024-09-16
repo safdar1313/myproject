@@ -4,27 +4,62 @@
     box-sizing: border-box;
     font-family:  'Montserrat',sans-serif,arial,helvetica ;
 }
+html, body{
+    overflow-x: hidden;
+}
 header
 {
     width: 100%;
-    padding: 0.1rem 0;
+    padding: 29px 15px 25px 15px;
     display: flex;
-    height: 20vh;
 }
+/* menu bars started */
+.menu-bar {
+    display: none;
+}
+.menu-icon {
+    position: absolute;
+    top: 50px;
+    right: 20px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+.menu-icon div {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    transition: 0.4s ease;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -6px);
+}
+/* Menu bar ended */
 .home-logo{
-    margin: 25px 100px;
-    width: 25%;
+    display: flex;
+    width: 24.2%;
+    justify-content: center;
 }
 .home-logo a img{
-    width: 150px;
+    width: 120px;
 }
-.header-ul{
-    margin-left: 200px;
+header .header-ul{
     display: flex;
     list-style: none;
-    width: 45%;
+    width: 70.5%;
     align-items: center;
-    justify-content: space-evenly;
+    padding-bottom: 5px;
+    gap: 40px;
+    justify-content: right;
 }
 .header-ul li a{
     color: #777;
@@ -62,7 +97,8 @@ nav .navbar-ul{
 /* Section Started From here */
 section .service-info{
     display: flex;
-    margin: 20px 0 50px 100px ;
+    width: 100%;
+    padding: 0 120px;
 }
 .service-info img{
     width: 25%;
@@ -70,15 +106,17 @@ section .service-info{
     margin: 20px 20px 30px 0 ;
 }
 .service-details h1{
-    font-size: 40px;
+    font-size: 42px;
     color: #222;
     font-weight: 700;
+}
+.service-details .fa-star{
+    color: #999;
 }
 .service-details-btn .yellow-btn{
     padding: 10px;
     background-color: rgb(245, 180, 3);
     border: none;
-    margin: 0 6px;
     border-radius: 3px; 
     font-size: 15px;
 }
@@ -106,7 +144,6 @@ section .service-info{
     color: #fff;
     border: none;
     border-radius: 3px;
-    margin: 0 6px;
     font-size: 15px;
 }
 .service-details-btn i{
@@ -127,16 +164,16 @@ section .service-info{
 /* Main Section Container started here */
 section .section-container
 {
-    width: 85%;
+    width: 100%;
+    padding: 0 104px;
     display: flex;
-    margin-left: 110px;
 }
 .section-container .left-side-container{
     width: 65%;
 }
 .section-container .right-side-container{
     width: 30%;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .photo-gallery h3{
     font-size: 30px;
@@ -144,7 +181,7 @@ section .section-container
     margin: 20px 0;
 }
 .left-side-container .img-crousel{
-    width: 95%;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .carousel-control-prev-icon,
@@ -169,7 +206,7 @@ section .section-container
     margin: 50px 0;
 }
 .write-review textarea{
-    width: 95%;
+    width: 100%;
     border: 1px solid rgb(209, 206, 206);
     border-radius: 4px;
     margin: 20px 0;
@@ -203,8 +240,12 @@ section .section-container
     border-radius: 3px;
     color: green;
 }
-.right-side-container .iframes{
-    width: 80%;
+.iframes iframe{
+    width: 100%;
+    height: 280px;
+}
+.card-body a{
+    font-weight: 500;
 }
 .card-body .fa{
     margin: 18px 10px;
@@ -214,7 +255,6 @@ section .section-container
     margin-top: 20px;
 }
 .list-group-item .span-time{
-    /* width: 100%; */
     background-color: #0071bc;
     text-align: right;
 }
@@ -228,78 +268,80 @@ section .section-container
     padding: 20px;
 }
 .business-pages a{
-    padding: 10px;
+    padding: 10px 20px;
 }
 /* Footer Started from here */
-.subscription{
-    margin-top: 40px;
+footer .subscription{
     background-color: #DFC979;
     display: flex;
-    height: 26vh;
     align-items: center;
+    padding: 18px 104px;
+    margin-top: 60px;
+    width: 100%;
+}
+.subscribe-input{
+    width: 50%;
+    padding: 0 10px;
 }
 .subscribe-header{
-    width: 40%;
-    margin-left: 120px;
+    width: 50%;
 }
 .subscribe-header h2{
-    padding: 15px 10px;
     color: #222;
-    font-size: 30px;
+    font-size: 31px;
+    font-weight: bolder;
 }
 .subscribe-header h4
 {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 500;
     color: #333;
 }
 .input-field{
-    margin-left: 150px;
-    width: 70%;
-    height: 10vh;
-    background-color: #222;
     border-radius: 5px;
+    width: 100%;
 }
 .input-field input{
-    padding: 10px;
+    margin-right: -4px;
+    padding: 15px;
     font-size: 18px;
+    width: 72%;
     outline: none;
     color: #555;
-    height: 10vh;
     border: none;
     border-radius: 5px 0 0 5px;
-    width: 80%;
 }
 .input-field button{
-    width: 15%;
+    width: 26%;
     background-color: #222;
     font-size: 16px;
     border: none;
     color: #ffffff;
-    padding: 10px;
+    padding: 16px;
 }
 .subscribe-input{
-    width: 60%;
+    width: 50%;
 }
 .footer-links{
-    background-color:#0071bc;
-    width: 100%;
+    width: 508px;
+    padding: 30px 100px;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    gap: 90px;
+    grid-template-columns: 270px 270px 270px;
+}
+footer .footer-links-container{
+    width: 100%;
+    background-color: #0071bc;
 }
 .footer-links-text .footer-ul li{
-    padding: 8px;
+    padding: 5px 0;
 }
 .footer-link-text{
-    width: 400px;
+    width: 280px;
 }
 .footer-links-text h4{
     color: #fff;
-    padding: 25px 0;
-    margin-left: 35px;
-    font-size: 24px;
+    padding: 15px 0 10px 0;
+    font-size: 22px;
     font-weight: 500;
 }
 .footer-links-text ul{
@@ -310,7 +352,7 @@ section .section-container
     color: #fff;
 }
 .footer-ul{
-    margin-bottom: 40px;
+    padding: 0;
 }
 .footer-icons i{
     color: #ffffff;
@@ -322,26 +364,178 @@ section .section-container
 .footer-icons img{
     width: 45px;
     height: 45px;
-    margin: 0 8px;
+    margin-right:10px;
     background-color: white;
     opacity: 0.9;
     border-radius: 10px;
-    margin-left: 30px;
 }
 .footer-ul a:hover{
     color: rgb(212, 208, 208);
 }
 /* bottom footer started */
+.footer-copyright{
+    background-color: #02619f;
+}
 .footer-copyright p{
-    margin: 0;
-}
-.footer-copyright{
-    background-color: #054d7e;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-copyright{
+    text-align: center;
     color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+    padding: 25.5px;
+}
+/* Responsiveness Started from here */
+@media screen and (max-width:1070px)
+{
+    header .header-ul{
+        gap: 26px;
+    }
+    .section-container{
+        flex-direction: column;
+    }
+    nav .navbar-ul{
+        padding: 0;
+    }
+    .navbar-ul li a{
+        padding: 5px 12px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .section-container .left-side-container{
+        width: 100%;
+    }
+    .section-container .right-side-container{
+        width: 100%;
+        margin: 0;
+    }
+    .right-side-container iframe{
+        width: 100%;
+    }
+    .input-field button{
+        padding: 17px 5px;
+        border-radius: 0 4px 4px 0 ;
+    }
+}
+@media screen and (max-width:900px)
+{
+    nav .navbar-ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px 0;
+    }
+    section .service-info{
+        padding: 0 100px;
+        width: 100%;
+    }
+    section .section-container{
+        padding: 0 60px;
+    }
+    .service-details-btn{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 0;
+    }
+    footer .subscription{
+        padding: 18px 60px;
+    }
+    .input-field input{
+        width: 67%;
+    }
+    .input-field button{
+        width: 32%;
+        font-size: 15px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(3,200px);
+        padding: 30px 60px;
+    }
+}
+@media screen and (max-width:775px)
+{
+    header{
+        padding: 29px 15px 25px 25px;
+    }
+    .menu-bar{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    header .header-ul{
+        display: block;
+        transform:scaleY(0) ;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        transform-origin: top ;
+        transition:all 0.7s ease-in-out;
+        background-color: #0071bc;
+        width: 250px;
+        padding: 0;
+        border-right: 1px solid rgb(247, 239, 239);
+    }
+    .header-ul li{
+        padding: 10px;
+        border: 1px solid #fff;
+    }
+    .header-ul li a{
+        width: 250px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .header-ul.showHeader {
+        flex-direction: column;
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: all 1s;
+    }
+    nav .navbar-ul{
+        margin: 10px 0 40px 10px;
+    }
+    /* Section Started from here */
+    section .service-info{
+        padding: 10px 30px;
+        align-items: center;
+    }
+    .service-details-btn button{
+        margin: 0 !important;
+    }
+    .service-info h1{
+        font-size: 27px;
+    }
+    section .section-container{
+        padding: 0 20px;
+    }
+    .section-container h2{
+        font-size: 19px;
+    }
+    .section-container .underline{
+        width: 62px;
+        margin-bottom: 35px;
+    }
+    /* Footer started from here */
+    footer .subscription{
+        display: block;
+        padding: 30px;
+    }
+    .subscription .subscribe-header, .subscribe-input{
+        width: 100%;
+    }
+    .subscribe-header h2{
+        font-size: 19px;
+    }
+    .subscribe-header h4{
+        font-size: 21px;
+    }
+    .subscribe-input{
+        padding: 0;
+    }
+    footer .footer-links{
+        width: 100%;
+        padding: 30px 20px;
+        grid-template-columns: 45% 45%;
+        gap: 20px;
+    }
+    .footer-ul a{
+        font-size: 15px;
+    }
 }
