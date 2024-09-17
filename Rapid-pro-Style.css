@@ -497,7 +497,7 @@ footer .footer-links-container{
         align-items: center;
     }
     .service-details-btn button{
-        margin: 0 !important;
+        margin: 0 5px 0 0 !important;
     }
     .service-info h1{
         font-size: 27px;
@@ -527,7 +527,7 @@ footer .footer-links-container{
         font-size: 21px;
     }
     .subscribe-input{
-        padding: 0;
+        padding: 5px;
     }
     footer .footer-links{
         width: 100%;

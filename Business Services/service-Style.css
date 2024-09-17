@@ -305,7 +305,7 @@ nav form{
     color: #ffffff;
 }
 .listing-footer .page-no-ul{
-    margin: 50px 52%;
+    margin: 50px 46%;
 }
 .customer-items{
     text-align: center;
@@ -458,7 +458,18 @@ nav form{
 /* 768
 1024
 1280 */
-
+@media screen and (min-width:1380px) {
+    .section-container .left-side-categories{
+        padding: 0 15px;
+        height: 90vh;
+    }
+}
+@media  screen and (min-width:1161px) {
+    .left-side-categories{
+        padding: 0 15px;
+        height: 115vh;
+    }
+}
 @media screen and (max-width: 1160px){
     .listing-container
     {
@@ -474,6 +485,10 @@ nav form{
     }
     .listing-cards-text .mgn-media{
         margin-top: 30px;
+    }
+    .left-side-categories{
+        padding: 0 15px;
+        height: 115vh;
     }
     .customer-items{
         padding: 30px 0;
@@ -502,6 +517,9 @@ nav form{
     }
     .listing-cards img{
         width: 300px;
+    }
+    .left-side-categories a{
+        width: 100%;
     }
     .listing-cards button{
         width: 300px;
@@ -541,6 +559,16 @@ nav form{
     {
         grid-template-columns: repeat(2,250px);
         gap: 10px;
+    }
+    .left-side-categories{
+        padding: 0 15px;
+        height: 115vh;
+    }
+    .left-side-categories a{
+        width: 100%;
+    }
+    .listing-cards-text .stars{
+        margin-top: 25px;
     }
     .listing-cards img{
         width: 250px;
@@ -607,10 +635,6 @@ nav form{
     .navBar-items input{
         width: 100%;
     }
-    /* .nav-input-what input{
-        width: 32.8%;
-        width: 100%;
-    } */
     .nav-input-what{
         width: 100%;
         margin: 5px 0;
@@ -641,6 +665,7 @@ nav form{
         align-items: center;
     }
     .left-side-categories{
+        padding: 0 15px;
         width: 95%;
         height: 115vh;
         margin-left: 0px;
@@ -723,7 +748,7 @@ nav form{
 
     .subscription-content .subscribe-input{
         width: 100%;
-        padding: 0 10px ;
+        padding: 10px ;
     }
     .subscription-content{
         flex-direction: column;
