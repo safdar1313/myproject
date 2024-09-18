@@ -46,6 +46,9 @@ header
 .home-logo a img{
     width: 120px;
 }
+body img{
+    object-fit: cover;
+}
 header .header-ul{
     display: flex;
     list-style: none;
@@ -165,12 +168,12 @@ nav form{
 .section-container{
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding: 10px 70px;
+    gap: 15px;
 }
 .left-side-categories{
-    width: 21%;
-    background-color: #0071bc;
-    height: 160vh;
-    margin-left: 5px;
+    width: 28%;
 }
 .left-side-categories .botom-border{
     border-bottom: 1px solid #bdbbbb;
@@ -190,33 +193,32 @@ nav form{
 .left-side-categories a{
     color: #fff;
     text-decoration: none;
+    padding: 7px 0;
     display: inline-block;
     font-weight: 500;
     font-size: 15px;
     width: 250px;
-    margin: 5px 20px;
 }
 .left-side-categories a:hover{
     text-decoration: underline;
 }
+.left-container{
+    padding: 15px;
+    background-color: #0071bc;
+}
 .locations{
     border-bottom: 1px solid #bdbbbb;
-    width: 90%;
-    margin: 0 0 30px 10px;
+    width: 100%;
+    padding: 10px 20px;
 }
-.locations h5{
+.left-container h5{
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    margin: 15px 0 0 10px;
-}
-.locations a{
-    margin: 7px 10px;
 }
 /* Right Side Categories Section started here */
 .right-side-categories{
-    width: 62%;
-    margin: 0 15px 10px 12px;
+    width: 72%;
 }   
 .right-side-categories .listing-top-tag{
     display: flex;
@@ -336,75 +338,72 @@ nav form{
     background-color: #5e5c5c;
 }
 /* Footer Started from Here */
-.subscription{
-    width: 100%;
+footer .subscription{
     background-color: #DFC979;
-    padding: 24px;
-    display: flex;
-    justify-content: center;
-}
-.subscription .subscription-content{
-    width: 1140px;
     display: flex;
     align-items: center;
+    padding: 18px 104px;
+    width: 100%;
 }
-.subscribe-header{
+.subscribe-header .subscribe-input{
     width: 50%;
-    padding: 0 12px;
+    padding: 0 10px;
 }
-.subscribe-header strong{
+.subscription-content .subscribe-header{
+    width: 50%;
+}
+.subscribe-header h2{
     color: #222;
     font-size: 31px;
-    margin: 0;
     font-weight: bolder;
 }
 .subscribe-header h4
 {
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 500;
     color: #333;
-    margin: 0;
 }
-.subscription-content .subscribe-input{
-    width: 50%;
-    padding: 0 10px ;
+.input-field{
+    border-radius: 5px;
+    width: 100%;
 }
-.subscribe-input input{
-    padding: 15px 10px;
+.input-field input{
+    margin-right: -4px;
+    padding: 15px;
     font-size: 18px;
+    width: 72%;
     outline: none;
     color: #555;
-    margin-right: -3px;
     border: none;
-    border-radius: 4px 0 0 4px;
-    width: 79%;
+    border-radius: 5px 0 0 5px;
 }
-.subscribe-input button{
-    width: 20%;
+.input-field button{
+    width: 26%;
     background-color: #222;
-    font-size: 15px;
+    font-size: 16px;
     border: none;
     border-radius: 0 4px 4px 0;
     color: #ffffff;
-    padding: 17.2px 0;
+    padding: 16px;
 }
 .subscribe-input{
-    width: 70%;
+    width: 50%;
 }
 .footer-links{
-    background-color:#0071bc;
-    width: 100%;
-    height: 50vh;
+    width: 508px;
+    padding: 30px 100px;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    padding-top: 25px;
-    padding-left: 120px;
+    grid-template-columns: 270px 270px 270px;
+}
+footer .footer-links-container{
+    width: 100%;
+    background-color: #0071bc;
 }
 .footer-links-text .footer-ul li{
     padding: 5px 0;
 }
 .footer-link-text{
-    width: 400px;
+    width: 280px;
 }
 .footer-links-text h4{
     color: #fff;
@@ -432,7 +431,7 @@ nav form{
 .footer-icons img{
     width: 45px;
     height: 45px;
-    margin: 0 8px;
+    margin-right:10px;
     background-color: white;
     opacity: 0.9;
     border-radius: 10px;
@@ -454,23 +453,12 @@ nav form{
     padding: 25.5px;
 }
 /* Making Screen Responsive */
-
-/* 768
-1024
-1280 */
-@media screen and (min-width:1380px) {
-    .section-container .left-side-categories{
-        padding: 0 15px;
-        height: 90vh;
-    }
-}
-@media  screen and (min-width:1161px) {
-    .left-side-categories{
-        padding: 0 15px;
-        height: 115vh;
-    }
-}
 @media screen and (max-width: 1160px){
+    .right-side-categories .listing-top-tag a
+    {
+        width: 30%;
+        padding: 8px 15px 8px 15px;
+    }
     .listing-container
     {
         display: grid;
@@ -486,10 +474,6 @@ nav form{
     .listing-cards-text .mgn-media{
         margin-top: 30px;
     }
-    .left-side-categories{
-        padding: 0 15px;
-        height: 115vh;
-    }
     .customer-items{
         padding: 30px 0;
     }
@@ -499,6 +483,12 @@ nav form{
     .customer-items button{
         border-radius: 5px;
         padding: 5px 12px;
+    }
+    .input-field input{
+        width: 68%;
+    }
+    .input-field button{
+        width: 30%;
     }
 }
 @media screen and (max-width: 980px)
@@ -514,6 +504,11 @@ nav form{
         display: grid;
         grid-template-columns: repeat(2,300px);
         gap: 10px;
+    }
+    .right-side-categories .listing-top-tag a
+    {
+        width: 30%;
+        padding: 8px 7px 8px 8px;
     }
     .listing-cards img{
         width: 300px;
@@ -531,10 +526,14 @@ nav form{
         margin-top: 0px;
     }
     /* Foooter Started */
-  
+    .input-field button{
+        font-size: 14px;
+        padding: 18px 5px;
+    }
     .footer-links{
         grid-template-columns: repeat(3,200px);
         gap: 40px;
+        height: none;
     }
     .footer-link-text{
         width: 200px;
@@ -555,14 +554,15 @@ nav form{
     header .header-ul{
         gap: 20px;
     }
+    .right-side-categories .listing-top-tag a
+    {
+        width: 33%;
+        padding: 8px 5px 8px 5px;
+    }
     .listing-container
     {
         grid-template-columns: repeat(2,250px);
         gap: 10px;
-    }
-    .left-side-categories{
-        padding: 0 15px;
-        height: 115vh;
     }
     .left-side-categories a{
         width: 100%;
@@ -576,9 +576,28 @@ nav form{
     .listing-cards button{
         width: 250px;
     }
+    /* footer started from here */
+    footer .subscription{
+        padding: 18px 70px;
+    }
+    .input-field input{
+        width: 66%;
+    }
+    .input-field button{
+        width: 32%;
+        font-size: 13px;
+        padding: 18px 7px;
+    }
+    .footer-links{
+        padding: 30px 70px;
+        grid-template-columns: 200px 200px 200px;
+    }
 }
 @media screen and (max-width:790px)
 {
+    header{
+        padding: 29px 15px 29px 30px;
+    }
     .menu-bar{
         width: 75%;
         display: flex;
@@ -589,7 +608,7 @@ nav form{
         display: block;
         transform:scaleY(0) ;
         position: absolute;
-        top: 120px;
+        top: 112px;
         right: 0;
         margin: 0;
         padding: 0;
@@ -663,31 +682,39 @@ nav form{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px 5px;
     }
     .left-side-categories{
         padding: 0 15px;
         width: 95%;
-        height: 115vh;
         margin-left: 0px;
     }
    /* Right side categories started */
    .right-side-categories{
         width:100%;
    }
+   .right-side-categories .listing-top-tag{
+        width: 100%;
+        padding: 5px 30px;
+   }
    .right-side-categories .listing-top-tag a
     {
-        width: 66%;
-        border-left: 1px solid #9b9b9b ;
-        border-top: 1px solid #9b9b9b ;
-        border-right: 1px solid #9b9b9b ;
-        padding: 8px 15px 8px 15px;
-        margin: 10px 0 0 10px;
+        width: 33%;
+        padding: 8px 0;
+        font-size: 14px;
+        color: #222;
     }
-    .sorting-service li a{
-        padding: 10px;
+    .listing-top-tag a b{
+        padding: 1px 0;
     }
-    .sorting-service .dropdown button{
-        padding: 2px !important; 
+    .right-side-categories .sorting-service{
+        width: 100%;
+        padding: 10px 30px;
+        margin: 0;
+    }
+    .sorting-service li{
+        padding: 0;
+        margin: 0;
     }
     .right-side-categories .sorting-service select{
         border:  none;
@@ -745,38 +772,30 @@ nav form{
         margin: 20px 0;
     }
     /* footer started */
-
-    .subscription-content .subscribe-input{
-        width: 100%;
-        padding: 10px ;
+    footer .subscription{
+        display: block;
+        padding: 30px;
     }
-    .subscription-content{
-        flex-direction: column;
-    }
-    .subscribe-header{
+    .subscription .subscribe-header, .subscribe-input{
         width: 100%;
     }
-    .subscribe-header strong{
-        font-size: 18px;
+    .subscribe-header h2{
+        font-size: 22px;
     }
-    .subscribe-input input{
-        width: 60%;
+    .subscribe-header h4{
+        font-size: 21px;
     }
     .subscribe-input button{
-        width: 30%;
+        font-size: 14px;
     }
-    .subscribe-input{
-        width: 70%;
+    footer .footer-links{
+        width: 100%;
+        padding: 30px;
+        grid-template-columns: 45% 45%;
+        gap: 20px;
     }
-    .footer-links{
-        height: 60vh;
-        grid-template-columns: 180px 200px;
-        padding-left: 20px;
-        gap: 10px;
-    }
-    .footer-copyright{
-        display: flex;
-        justify-content: center;
-    }
+    .footer-ul a{
+        font-size: 15px;
+    }    
 
 }

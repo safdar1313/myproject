@@ -85,20 +85,25 @@ section
 section .skew-bg {
     box-sizing: border-box;
     content: '';
-    height: 85vh;
+    height: 100%;
     z-index: -1;
     position: absolute;
-    width: 48.3%; 
+    width: 53.3%; 
     background: #bd0101;
     transform: skew(-22deg);
-    right: -12vw;
+    right: -27vw;
+    bottom: 0;
     max-width: none;
     overflow: hidden; 
 }
 body,html{
     overflow-x: hidden;
 }
+body img{
+    object-fit: cover;
+}
 section .container{
+    position: relative;
     width: 100% !important;
     max-width: 100%;
     margin: 0;
@@ -145,11 +150,12 @@ section .container{
 .fixed-contact-btn button{
     border: none;
     transform: rotate(90deg);
-    margin: -60px 0 0px 20px;
+    margin: 0px 0 0px 20px;
     box-shadow: 0 0 15px #BD0101FF;
     border-radius: 50%;
     position:fixed;
     z-index: 10;
+    bottom: 15px;
 }
 .fixed-contact-btn i{
     background-color: #bd0101;
@@ -160,7 +166,6 @@ section .container{
     border-radius: 50%;
 }
 .middle-section-nav{
-    margin-top: 42px;
     text-align: center;
     background-color: #800101FF;
 }
@@ -254,7 +259,6 @@ section .container{
 .section-services-pages .toggle-pages{
     width: 100%;
     padding: 10px 80px;
-    margin: 20px 0;
 }
 .toggle-pages .page-image{
     width: 50%;
@@ -458,16 +462,21 @@ footer{
         gap: 20px;
         width: 95%;
     }
-    section .skew-bg {
-        height: 90vh;
-    }
     .toggle-pages .installation-page, .toggle-pages .repair-page,.toggle-pages .maintenance-page{
         gap: 20px;
     }
     .section-services-pages .toggle-pages {
         width: 100%;
         padding: 12px 15px;
-        margin: 20px 0;
+    }
+       /* Footer started here */
+       footer .footer-section{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 20px;
+    }
+    footer .repair-section{
+        margin: 0;
     }
 }
 @media screen and (max-width:985px) 
@@ -518,13 +527,6 @@ footer{
     }
     section .container{
         display: block;
-        padding-bottom: 0;
-    }
-    section .skew-bg {
-        height: 111vh;
-        width: 50%; 
-        transform: skew(-22deg);
-        right: -33vw;
     }
     .container .home-image{
         width: 100% !important;
@@ -603,31 +605,10 @@ footer{
     .above-footer-container .map-iframe iframe{
         height: 400px;
     }
-    /* Footer started here */
-    footer .footer-section{
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        gap: 20px;
-    }
-    footer .repair-section{
-        margin: 0;
-    }
-}
-@media screen and (max-width:739px)
-{
-    section .skew-bg{
-        width: 50%;
-        height: 117vh;
-        right: -43vw;
-    }
+
 }
 @media screen and (max-width: 689px)
 {
-    section .skew-bg{
-        width: 50%;
-        height: 127vh;
-        right: -43vw;
-    }
     .middle-section-nav p{
         padding: 30px 15px;
     }
@@ -656,10 +637,16 @@ footer{
         height: 24vh;
     }
     .service-gallery h3{
-        padding-top: 50px;
+        padding-top: 30px;
     }
     section .gallery-carousel{
         padding: 10px 30px;
+    }
+    .carousel-inner .carousel-item{
+        gap: 35px;
+    }
+    .carousel-inner .carousel-item img{
+        height: 200px;
     }
     section .youtube-iframe{
         padding: 10px 30px;
@@ -678,19 +665,17 @@ footer{
     }
 
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 650px)
 {
-    section .skew-bg{
-        width: 50%;
-        height: 143vh;
-        right: -50vw;
-    }    
+    .container .skew-bg{
+        right: -49vw;
+        width: 70%;
+    }
 }
-@media screen and (max-width: 421px)
+@media screen and (max-width:429px)
 {
-    section .skew-bg{
-        width: 50%;
-        height: 164vh;
-        right: -69vw;
-    }  
+    .container .skew-bg{
+        right: -72vw;
+        width: 65%;
+    }
 }

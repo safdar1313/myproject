@@ -452,7 +452,7 @@ footer .footer-links-container{
 @media screen and (max-width:775px)
 {
     header{
-        padding: 29px 15px 25px 25px;
+        padding: 29px 15px 25px 30px;
     }
     .menu-bar{
         width: 75%;
